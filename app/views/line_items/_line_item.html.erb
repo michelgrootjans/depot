@@ -6,7 +6,8 @@
 	<td>
 		<%= button_to "x",
 			line_item,
-			method: :delete %>
+			method: :delete,
+			remote: true %>
 		<%= line_item.quantity %>&times;
 	</td>
 	<td><%= line_item.title %></td>

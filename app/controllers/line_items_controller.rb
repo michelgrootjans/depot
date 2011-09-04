@@ -27,7 +27,7 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to store_path }
-      format.js   { @current_item = item }
+      format.js   { @current_item = item, @cart = item.cart }
       format.json { head :ok }
     end
   end
