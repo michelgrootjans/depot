@@ -15,4 +15,20 @@ class LineItemsController < ApplicationController
       end
     end
   end
+
+  def destroy
+    item = LineItem.find(params[:id])
+    if item.quantity <= 1
+      item.destroy
+    else
+      item.quantity -= 1
+      item.save
+    end
+
+    respond_to do |format|
+      format.html { redirect_to store_path }
+      format.js   { @current_item = item }
+      format.json { head :ok }
+    end
+  end
 end

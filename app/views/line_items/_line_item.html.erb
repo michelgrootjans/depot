@@ -3,7 +3,14 @@
 <% else %>
 <tr>
 <% end %>
-	<td><%= line_item.quantity %>&times;</td>
+	<td>
+		<%= button_to "x",
+			line_item,
+			method: :delete %>
+		<%= line_item.quantity %>&times;
+	</td>
 	<td><%= line_item.title %></td>
-	<td class="item_price"><%= number_to_currency(line_item.total_price) %></td>
+	<td class="item_price">
+		<%= number_to_currency(line_item.total_price) %>
+	</td>
 </tr>
