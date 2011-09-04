@@ -1,8 +1,8 @@
 class Cart < ActiveRecord::Base
   has_many :line_items, dependent: :destroy
   
-  def has_items?
-    line_items.any?
+  def empty?
+    !line_items.any?
   end
   
   def add_product(product_id)
