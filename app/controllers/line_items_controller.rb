@@ -19,17 +19,18 @@ class LineItemsController < ApplicationController
   end
 
   def destroy
-    @item = LineItem.find(params[:id])
-    if @item.quantity <= 1
-      @item.destroy
+    @line_item = LineItem.find(params[:id])
+    @line_item.quantity -= 1
+    if @line_item.quantity <= 0
+      @line_item.destroy
     else
-      @item.quantity -= 1
-      @item.save
+      @line_item.save
     end
 
     respond_to do |format|
       format.html { redirect_to store_path }
-      format.js   { @current_item = @item, @cart = @item.cart }
+      format.js   { @current_item = @line_item,
+                    @cart = @line_item.cart }
       format.json { head :ok }
     end
   end
