@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   def index
-    @orders = Order.all
+    @orders = Order.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html
