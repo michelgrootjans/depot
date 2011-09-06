@@ -8,8 +8,10 @@
  *= require_tree . 
 */
 
+$lightGreen: #9c9;
+
 #banner {
-  background: #9c9;
+  background: $lightGreen;
   padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
@@ -18,6 +20,10 @@
 
   img {
     float: left;
+  }
+
+  a {
+	color: $lightGreen;
   }
 }
 
