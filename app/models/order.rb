@@ -12,4 +12,8 @@ class Order < ActiveRecord::Base
       line_items << item
     end
   end
+  
+  def size
+    line_items.size
+  end
 end

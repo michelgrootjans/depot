@@ -5,6 +5,10 @@ class Cart < ActiveRecord::Base
     !line_items.any?
   end
   
+  def size
+    line_items.size
+  end
+  
   def add_product(product_id)
     current_item = line_items.find_by_product_id(product_id)
     if current_item
