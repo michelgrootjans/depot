@@ -8,7 +8,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "username must be unique" do
-    user = User.new(name: "scott", password_digest: "secret")
+    user = User.new(name: "dave", password_digest: "secret")
     assert !user.save
     assert_equal I18n.translate('activerecord.errors.messages.taken'),
                  user.errors[:name].join('; ')
