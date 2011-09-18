@@ -3,8 +3,8 @@ Depot::Application.routes.draw do
 
   controller :sessions do
     get 'login' => :new
-    get 'login' => :create
-    get 'logout' => :destroy
+    post 'login' => :create
+    delete 'logout' => :destroy
   end
 
   resources :users
