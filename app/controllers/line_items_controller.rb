@@ -1,4 +1,6 @@
 class LineItemsController < ApplicationController
+  skip_before_filter :authorize
+  
   def create
     @cart = current_cart
     product = Product.find(params[:product_id])

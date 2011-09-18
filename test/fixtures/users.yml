@@ -6,6 +6,10 @@ scott:
   name: scott
   password_digest: <%= BCrypt::Password.create('tiger') %>
 
+one:
+  name: one
+  password_digest: one
+
 two:
   name: two
   password_digest: two
