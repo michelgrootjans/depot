@@ -1,0 +1,21 @@
+nl:
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " en "
+      last_word_connector: ", en "
+
+  banner:
+    title: "Pragmatische Boekenkast"
+
+  side:
+    home: "Thuis"
+    questions: "Vragen"
+    news: "Nieuws"
+    contact: "Contacteer ons"

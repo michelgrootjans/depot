@@ -1,0 +1,24 @@
+pirate:
+  date:
+    formats:
+      default: "The year of the lord %Y arr..."
+      short: "Around %b"
+      long: "Arrround %B, %Y'ish"
+  time:
+    formats:
+      short: "arrround %H'ish"
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " and err "
+      last_word_connector: ", and err "
+
+  banner:
+    title: "Pirate Bookshelf"
+
+  side:
+    home: "Land in sight"
+    questions: "Arrrr?"
+    news: "Arrr!"
+    contact: "Ahoy"

@@ -1,4 +1,4 @@
-en:
+fr:
   date:
     formats:
       default: "%Y-%m-%d"
@@ -8,14 +8,14 @@ en:
   support:
     array:
       words_connector: ", "
-      two_words_connector: " and "
-      last_word_connector: ", and "
+      two_words_connector: " et "
+      last_word_connector: ", et "
 
   banner:
-    title: "Pragmatic Bookshelf"
-    
+    title: "Librarie Pragmatique"
+  
   side:
-    home: "Home"
+    home: "Maison"
     questions: "Questions"
-    news: "News"
-    contact: "Contact us"
+    news: "Nouvelles"
+    contact: "Contactez-nous"
