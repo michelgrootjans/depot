@@ -5,6 +5,15 @@ nl:
       short: "%b %d"
       long: "%B %d, %Y"
 
+  number:
+    currency:
+      format:
+        unit: "$US"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format: "%u&nbsp;%n"
+
   support:
     array:
       words_connector: ", "
@@ -19,3 +28,14 @@ nl:
     questions: "Vragen"
     news: "Nieuws"
     contact: "Contacteer ons"
+
+  store:
+    index:
+      title_html: "Uw Pragmatische Catalogus"
+      add_html: "Voeg to aan winkelmandje"
+
+  carts:
+    cart:
+      title: "Uw winkelwagentje"
+      empty: "Maak leeg"
+      checkout: "Naar kassa"

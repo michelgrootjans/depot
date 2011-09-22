@@ -5,6 +5,15 @@ en:
       short: "%b %d"
       long: "%B %d, %Y"
 
+  number:
+    currency:
+      format:
+        unit: "$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%u%n"
+
   support:
     array:
       words_connector: ", "
@@ -19,3 +28,14 @@ en:
     questions: "Questions"
     news: "News"
     contact: "Contact us"
+
+  store:
+    index:
+      title_html: "Your Pragmatic Catalog"
+      add_html: "Add to Cart"
+
+  carts:
+    cart:
+      title: "Your cart"
+      empty: "Empty cart"
+      checkout: "Checkout"
