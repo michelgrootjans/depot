@@ -39,3 +39,32 @@ fr:
       title: "Vos achats"
       empty: "Vider achats"
       checkout: "Passer à la caisse"
+  
+  orders:
+    new:
+      legend: "Veuillez entrer vos doneés"
+    form:
+      pay_prompt: "Choisissez une méthode de paiement"
+      submit:     "Passer la commande"
+  thanks: "Merci de votre commande"
+      
+  activerecord:
+    models:
+      order: "commande"
+    attributes:
+      order:
+        name:         "Nom"
+        address:      "Adresse"
+        email:        "Courriel"
+        pay_type:     "Paiement"
+    errors:
+      messages:
+        inclusion: "n'est pas dans la liste"
+        blank: "ne peut pas être vide"
+
+  errors:
+    template:
+      body: "pas glop, pas glop"
+      header:
+        one: "Une erreur c'est produite durant le traitement de votre %{model}"
+        other: "%{count} erreurs ce sont produites durant le traitement de votre %{model}"

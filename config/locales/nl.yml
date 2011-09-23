@@ -39,3 +39,28 @@ nl:
       title: "Uw winkelwagentje"
       empty: "Maak leeg"
       checkout: "Naar kassa"
+      
+  orders:
+      new:
+        legend: "Uw gegevens"
+      form:
+        pay_prompt: "Gelieve een betaalmethode te kiezen"
+        submit:     "Bestel"
+  thanks: "Dank u voor uw bestelling"
+
+  activerecord:
+    models:
+      order: "Bestelling"
+    attributes:
+      order:
+        name:         "Naam"
+        address:      "Adres"
+        email:        "e-Mail"
+        pay_type:     "Betaling"
+
+  errors:
+    template:
+      body: "pas glop, pas glop"
+      header:
+        one: "Een fout heeft zich voorgedaan bij de verwerking van uw %{model}"
+        other: "%{count} fouten hebben zich voorgedaan bij de verwerking van uw %{model}"

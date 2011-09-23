@@ -39,3 +39,26 @@ en:
       title: "Your cart"
       empty: "Empty cart"
       checkout: "Checkout"
+  
+  orders:
+    new:
+      legend: "Please Enter Your Details"
+    form:
+      pay_prompt: "Select a payment method"
+      submit:     "Place Order"
+  thanks: "Thank you for your order"
+
+  activerecord:
+    models:
+      order: "Order"
+    attributes:
+      order:
+        name:         "Name"
+        address_html: "Address"
+        email:        "E-mail"
+        pay_type:     "Pay with"
+  errors:
+    template:
+      header:
+        one: "Une erreur c'est produite durant le traitement de cet %{model}"
+        other: "%{count} erreurs ce sont produites durant le traitement de cet %{model}"
